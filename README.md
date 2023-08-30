@@ -551,8 +551,14 @@ You can access to the promtheus dashboard from your browser  http://localhost:90
 
 ###### 5. Setup as Prometheus as PQL datasource  
 
-Configure the `env.json` file. You'll observe the running agents associated with your ngrok account at [ngrok dashboard](https://dashboard.ngrok.com/tunnels/agent).
 
+Begin by configuring the `env.json` file to establish the connection. To identify the running agents linked to your ngrok account, navigate to the [ngrok dashboard](https://dashboard.ngrok.com/tunnels/agent). In the dashboard, you'll find a panel resembling the one below:
+
+<img src="images/ngrok-agent.svg" alt="alt text" width="400" />
+
+The highlighted DNS name within the red box is the key detail you'll need to set up in the `env.json` file. Open the `env.json` file and insert the following configuration block:
+
+```
     {
       "name": "prometheus",
       "type": "Prometheus",
@@ -561,7 +567,9 @@ Configure the `env.json` file. You'll observe the running agents associated with
         "window": "300s"
       }
     }
+```
 
+Replace <ngrok_url> with the DNS name you identified in the ngrok dashboard.
 
 By following these steps, you will have successfully hosted Prometheus locally using Docker, exposed it via ngrok, and set it up as a data source for PQL queries. 
 
