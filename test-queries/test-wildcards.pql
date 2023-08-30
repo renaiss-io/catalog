@@ -1,0 +1,17 @@
+where(@cw_aws_east; @cw_aws_west)
+.what(
+    "MetricName='CPUUtilization'; DBInstanceIdentifier='*'; Namespace='AWS/RDS'";
+    "MetricName='CPUUtilization'; DBInstanceIdentifier='odoo-prod'; Namespace='AWS/RDS'";
+    "MetricName='*IOPS'; Namespace='AWS/RDS'"
+)
+.when("start = '29-08-2023 00:00:00 +00'; end = '29-08-2023 03:59:59 +00'")
+.window(5m)
+
+.request($where[0];$what[0];$when[0];$window[0]).as($ts_cpu0)
+.request($where[0];$what[1];$when[0];$window[0]).as($ts_cpu1)
+.request($where[0];$what[2];$when[0];$window[0]).as($ts_cpu2)
+
+.filter($ts_cpu0; "DBInstanceIdentifier='odoo-prod'").as($prod)
+
+//.chart($ts_cpu0;$ts_cpu1;$ts_cpu2;$prod;@line)
+.print($ts_cpu0;$ts_cpu1;$ts_cpu2;$prod)
