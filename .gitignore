@@ -1,0 +1,4 @@
+examples/env.json
+.out/*
+*env.json
+install.sh
