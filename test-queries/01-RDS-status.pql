@@ -1,0 +1,53 @@
+where(@cw_aws_east; @cw_aws_west)
+.what(
+    "MetricName='CPUUtilization'; Namespace='AWS/RDS'" ;
+    "MetricName='DatabaseConnections'; Namespace='AWS/RDS'";
+    "MetricName='FreeStorageSpace'; Namespace='AWS/RDS'";
+    "MetricName='FreeableMemory'; Namespace='AWS/RDS'";
+    "MetricName='*Latency'; Namespace='AWS/RDS'";
+    "MetricName='WriteThroughput'; Namespace='AWS/RDS'";
+    "MetricName='ReadThroughput'; Namespace='AWS/RDS'";
+    "MetricName='*IOPS'; Namespace='AWS/RDS'"
+)
+.when("start = '29-08-2023 00:00:00 +00'; end = '29-08-2023 03:59:59 +00'")
+.window(5m)
+
+.request($where[0];$what[0];$when[0];$window[0]).as($ts_cpu)
+.note("<h2>CPU Utilizations.</h2>")
+.chart($ts_cpu;@line)
+
+
+.request($where[0];$what[1];$when[0];$window[0]).as($ts_connection)
+.note("<h2>Database Connections.</h2>")
+.chart($ts_connection;@bar)
+
+.request($where[0];$what[2];$when[0];$window[0]).as($ts_freeStorage)
+.note("<h2>Free Storage Space.</h2>")
+.chart($ts_freeStorage;@linestack)
+
+.request($where[0];$what[3];$when[0];$window[0]).as($ts_freeableMem)
+.note("<h2>Freeable Memory.</h2>")
+.chart($ts_freeableMem;@linestack)
+
+.request($where[0];$what[4];$when[0];$window[0]).as($ts_latency)
+.merge($ts_latency; average).as($avgLatency)
+.note("<h2>Read/Write Latency.</h2>")
+.chart($ts_latency;$avgLatency;@linestack)
+
+.request($where[0];$what[5];$when[0];$window[0]).as($ts_writeThroughput)
+.request($where[0];$what[6];$when[0];$window[0]).as($ts_readThroughput)
+.merge($ts_writeThroughput;$ts_readThroughput; average).as($avgThroughput)
+.note("<h2>Read/Write Throughput.</h2>")
+.chart($ts_writeThroughput;$ts_readThroughput;$avgThroughput;@linestack)
+
+.request($where[0];$what[7];$when[0];$window[0]).as($ts_iops)
+.merge($ts_iops; average).as($avgIops)
+.note("<h2>Read/Write IOPS.</h2>")
+.chart($ts_iops;$avgIops;@linestack)
+
+.filter($ts_iops; "MetricName='WriteIOPS'").as($ts_wiops)
+.correlate($ts_cpu; $ts_wiops).as($corr_cpu_wiops)
+.filter($ts_iops; "MetricName='ReadIOPS'").as($ts_riops)
+.correlate($ts_cpu; $ts_riops).as($corr_cpu_riops)
+.note("<h2>Correlation CPU/IOPS .</h2>")
+.chart($corr_cpu_wiops;$corr_cpu_riops;@bar)
