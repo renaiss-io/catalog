@@ -1,0 +1,186 @@
+
+<style>
+* {font-family: Verdana, sans-serif;}
+
+.heading {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 60% 40%;
+	height: 150px;
+	font-size: small;
+	overflow: auto;
+  }
+  
+  .chart {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .container {
+    border: 2px solid white;
+    gap: 3px;
+    background-color: #f9f9f9;
+    display: grid;
+  }
+  
+  .content {
+    border: 2px solid #f9f9f9;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    padding:  0.1em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  .item {
+    border: 2px solid #f8f8f8;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    padding: 0.25em;
+  }
+  
+  .shared {
+    grid-area: 1 / 1 / 1 / span 2;
+	overflow-x: scroll;
+	max-width: 100%;
+  }
+
+td {
+	padding-left: 30px;
+	font-size: small;
+	white-space: nowrap;
+}
+
+th {
+  padding-left: 30px;
+  text-align: left;
+  font-size: small;
+  font-weight: normal;
+  color: rgb(160, 160, 160);
+}
+
+
+</style>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@2.0.1/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    
+    <script>
+        let f = (arr) => {arr.forEach(element => {element.x *= 1000}); return arr}
+        let f1 = (arr) => {arr.forEach(element => {element.ts *= 1000}); return arr}
+    </script>
+
+	<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+	<div class="container">
+
+		<div class="content heading">
+    		<div class="item">
+				<pre><code class="language-javascript">
+				where(@prometheus)
+.what("node_filesystem_avail_bytes")
+.when(3h)
+.window(10m)
+
+.request($where[0];$what[0];$when[0];$window[0]).as($node_cpu_seconds)
+.chart($node_cpu_seconds; @linestack)
+
+
+				</code></pre>
+			</div>
+    	
+			<div class="item">
+				Found 3 PQL where and 7 chart variables.
+TIME TOOK getting row metrics from [48 48 48 48] (508.602286ms)
+Errors: 0
+			</div>
+  		</div>
+		<div class="content chart">
+		<div class="item shared">
+		<table>
+			<tr>
+				<th>__name__</th>
+				<th>device</th>
+				<th>fstype</th>
+				<th>instance</th>
+				<th>job</th></tr>
+			<tr>
+				<td>node_filesystem_avail_bytes</td>
+				<td>/dev/nvme0n1p2</td>
+				<td>ext4</td>
+				<td>node-exporter:9100</td>
+				<td>node_exporter</td></tr>
+		</table>
+		</div>
+		
+		<div class="item" style=" max-width: 600px;"><canvas id="ch_12" ></canvas></div>
+
+		<div class="item">
+			
+			<div><a href="#">$node_cpu_seconds</a></div>
+			<div>
+				<table>
+					<tr>
+						
+						<th style="color:rgb(99, 99, 132);font-weight: bold;">[0]</th>
+						<th>mountpoint</th></tr>
+					<tr>
+						<td/>
+						<td>/etc/hostname</td></tr>
+				</table>
+			</div>
+			<div>
+				<table>
+					<tr>
+						
+						<th style="color:#4dc9f6;font-weight: bold;">[1]</th>
+						<th>mountpoint</th></tr>
+					<tr>
+						<td/>
+						<td>/etc/hosts</td></tr>
+				</table>
+			</div>
+			<div>
+				<table>
+					<tr>
+						
+						<th style="color:#f67019;font-weight: bold;">[2]</th>
+						<th>mountpoint</th></tr>
+					<tr>
+						<td/>
+						<td>/etc/resolv.conf</td></tr>
+				</table>
+			</div></div>
+	</div>
+
+		<script>
+			const ch_12 = document.getElementById('ch_12');
+			new Chart(ch_12, {type: 'line',
+				data: {
+					datasets:[
+							{
+								data: f1([{"ts":1693485936,"v":190026096640},{"ts":1693486536,"v":190053851136},{"ts":1693487136,"v":190032064512},{"ts":1693487736,"v":190025756672},{"ts":1693488336,"v":190139064320},{"ts":1693488936,"v":190125449216}]),
+								backgroundColor: 'rgb(99, 99, 132)',
+								borderColor: 'rgb(99, 99, 132)',
+							},
+							{
+								data: f1([{"ts":1693485936,"v":190026096640},{"ts":1693486536,"v":190053851136},{"ts":1693487136,"v":190032064512},{"ts":1693487736,"v":190025756672},{"ts":1693488336,"v":190139064320},{"ts":1693488936,"v":190125449216}]),
+								backgroundColor: '#4dc9f6',
+								borderColor: '#4dc9f6',
+							},
+							{
+								data: f1([{"ts":1693485936,"v":190026096640},{"ts":1693486536,"v":190053851136},{"ts":1693487136,"v":190032064512},{"ts":1693487736,"v":190025756672},{"ts":1693488336,"v":190139064320},{"ts":1693488936,"v":190125449216}]),
+								backgroundColor: '#f67019',
+								borderColor: '#f67019',
+							},]
+				},options: {plugins:{legend:{display: false}},parsing: {xAxisKey: 'ts',yAxisKey: 'v'},scales: {y: {beginAtZero: true},x: {type: 'time',}}}});
+		</script>
+</div>
+
+</body>

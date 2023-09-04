@@ -1,8 +1,8 @@
 where(@prometheus)
 .what("node_cpu_seconds_total")
-.when(24h)
-.window(15m)
+.when(1h)
+.window(1m)
 .request($where[0];$what[0];$when[0];$window[0]).as($p_cpu)
 
-.print($p_cpu)
-.out("prometheus queries")
+.chart($p_cpu;@linestack)
+

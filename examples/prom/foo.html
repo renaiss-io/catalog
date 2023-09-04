@@ -1,0 +1,150 @@
+
+<style>
+* {font-family: Verdana, sans-serif;}
+
+.heading {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 60% 40%;
+	height: 150px;
+	font-size: small;
+	overflow: auto;
+  }
+  
+  .chart {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .container {
+    border: 2px solid white;
+    gap: 3px;
+    background-color: #f9f9f9;
+    display: grid;
+  }
+  
+  .content {
+    border: 2px solid #f9f9f9;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    padding:  0.1em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  .item {
+    border: 2px solid #f8f8f8;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    padding: 0.25em;
+  }
+  
+  .shared {
+    grid-area: 1 / 1 / 1 / span 2;
+	overflow-x: scroll;
+	max-width: 100%;
+  }
+
+td {
+	padding-left: 30px;
+	font-size: small;
+	white-space: nowrap;
+}
+
+th {
+  padding-left: 30px;
+  text-align: left;
+  font-size: small;
+  font-weight: normal;
+  color: rgb(160, 160, 160);
+}
+
+
+</style>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@2.0.1/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    
+    <script>
+        let f = (arr) => {arr.forEach(element => {element.x *= 1000}); return arr}
+        let f1 = (arr) => {arr.forEach(element => {element.ts *= 1000}); return arr}
+    </script>
+
+	<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+	<div class="container">
+
+		<div class="content heading">
+    		<div class="item">
+				<pre><code class="language-javascript">
+				
+where(@prometheus)
+.what("node_timex_maxerror_seconds")
+.when(30m)
+.window(1m)
+
+.request($where[0];$what[0];$when[0];$window[0]).as($ts_node_cpu_seconds_total)
+.chart($ts_node_cpu_seconds_total; @line123)
+
+
+
+				</code></pre>
+			</div>
+    	
+			<div class="item">
+				Found 3 PQL where and 7 chart variables.
+TIME TOOK getting row metrics from [48 48 48 48] (297.218737ms)
+Errors: 0
+			</div>
+  		</div>
+		<div class="content chart">
+		<div class="item shared">
+			<table>
+				<tr>
+					<th>__name__</th>
+					<th>instance</th>
+					<th>job</th></tr>
+				<tr>
+					<td>node_timex_maxerror_seconds</td>
+					<td>node-exporter:9100</td>
+					<td>node_exporter</td></tr>
+			</table>
+		</div>
+		
+		<div class="item" style=" max-width: 600px;"><canvas id="ch_1200" ></canvas></div>
+
+		<div class="item">
+			<div><a href="#">$ts_node_cpu_seconds_total</a></div><div>
+				<table>
+					<tr>
+						
+						<th style="color:#4dc9f6;font-weight: bold;">[0]</th></tr>
+					<tr>
+						<td/></tr>
+				</table>
+			</div>
+		</div>
+		
+			<script>
+				const ch_1200 = document.getElementById('ch_1200');
+				new Chart(ch_1200, {type: 'line',
+					data: {
+						datasets:[
+								{
+									data: f1([{"ts":1693856460,"v":0.119},{"ts":1693856520,"v":0.149},{"ts":1693856580,"v":0.179},{"ts":1693856640,"v":0.209},{"ts":1693856700,"v":0.239},{"ts":1693856760,"v":0.269},{"ts":1693856820,"v":0.299},{"ts":1693856880,"v":0.329},{"ts":1693856940,"v":0.359},{"ts":1693857000,"v":0.389},{"ts":1693857060,"v":0.419},{"ts":1693857120,"v":0.449},{"ts":1693857180,"v":0.479},{"ts":1693857240,"v":0.509},{"ts":1693857300,"v":0.019},{"ts":1693857360,"v":0.049},{"ts":1693857420,"v":0.079},{"ts":1693857480,"v":0.109},{"ts":1693857540,"v":0.139},{"ts":1693857600,"v":0.169},{"ts":1693857660,"v":0.199},{"ts":1693857720,"v":0.229},{"ts":1693857780,"v":0.259},{"ts":1693857840,"v":0.289},{"ts":1693857900,"v":0.319},{"ts":1693857960,"v":0.349},{"ts":1693858020,"v":0.379},{"ts":1693858080,"v":0.409},{"ts":1693858140,"v":0.439},{"ts":1693858200,"v":0.469},{"ts":1693858260,"v":0.499}]),
+									backgroundColor: '#4dc9f6',
+									borderColor: '#4dc9f6',
+								},
+						]
+					},options: {plugins:{legend:{display: false}},parsing: {xAxisKey: 'ts',yAxisKey: 'v'},scales: {y: {beginAtZero: true},x: {type: 'time',}}}});
+			</script>
+	</div>
+</div>
+
+</body>

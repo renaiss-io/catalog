@@ -1,0 +1,8 @@
+where(@prometheus)
+.what("node_filesystem_avail_bytes")
+.when(3h)
+.window(10m)
+
+.request($where[0];$what[0];$when[0];$window[0]).as($node_cpu_seconds)
+.chart($node_cpu_seconds; @line)
+

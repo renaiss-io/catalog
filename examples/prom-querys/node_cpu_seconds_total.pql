@@ -1,0 +1,14 @@
+where(@prometheus)
+.what("node_cpu_seconds_total")
+.when(1h)
+.window(1m)
+
+.request($where[0];$what[0];$when[0];$window[0]).as($ts_node_cpu_seconds_total)
+.filter($ts_node_network_receive_bytes_total,"cpu='0'").as($ts_filtered0)
+.filter($ts_node_network_receive_bytes_total,"cpu='1'").as($ts_filtered1)
+.filter($ts_node_network_receive_bytes_total,"cpu='2'").as($ts_filtered2)
+
+.filter($ts_node_network_receive_bytes_total; "device='eth0'").as($ts_filtered)
+.average($ts_filtered).as($ts_avg)
+.chart($ts_avg; @line123)
+

@@ -1,13 +1,14 @@
 #!/bin/bash
 
-AUTOPTIC_HOME=~/autoptic
+AUTOPTIC_HOME=$(pwd)
 AUTOPTIC_RUN=$AUTOPTIC_HOME/run
 AUTOPTIC_ENV=$AUTOPTIC_HOME/env.json
 AUTOPTIC_PQL=$AUTOPTIC_HOME/demo.pql
+AUTOPTIC_EP=https://autoptic.io/pql/ep/a7a849b5-4241-427e-b9e1-a921b8002b76/run 
 
-curl -s --create-dirs -o $AUTOPTIC_RUN "https://raw.githubusercontent.com/autopticio/catalog/main/examples/run"
-curl -s --create-dirs -o $AUTOPTIC_ENV "https://raw.githubusercontent.com/autopticio/catalog/main/examples/env_template.json"
-curl -s --create-dirs -o $AUTOPTIC_PQL "https://raw.githubusercontent.com/autopticio/catalog/main/examples/demo.pql"
+#curl -s --create-dirs -o $AUTOPTIC_RUN "https://raw.githubusercontent.com/autopticio/catalog/main/examples/run"
+#curl -s --create-dirs -o $AUTOPTIC_ENV "https://raw.githubusercontent.com/autopticio/catalog/main/examples/env_template.json"
+#curl -s --create-dirs -o $AUTOPTIC_PQL "https://raw.githubusercontent.com/autopticio/catalog/main/examples/demo.pql"
 
 echo "-------------------------------------------------------------------------------------"
 echo "Let's run your first PQL program with Amazon CloudWatch!"

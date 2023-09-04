@@ -1,0 +1,9 @@
+where(@prometheus)
+.what("node_network_receive_bytes_total")
+.when(1h)
+.window(1m)
+
+.request($where[0];$what[0];$when[0];$window[0]).as($ts_node_network_receive_bytes_total)
+.filter($ts_node_network_receive_bytes_total; "device='eth0'").as($ts_filtered)
+.average($ts_filtered).as($ts_avg)
+.chart($ts_avg; @line123)

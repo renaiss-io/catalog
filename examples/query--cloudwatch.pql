@@ -7,6 +7,8 @@ where(@cw_aws)
     "MetricName='NetworkPacketsOut';InstanceId='i-00f8880d7a4d502db'; Namespace='AWS/EC2'"
 )
 .when(24h)
+/* Multiline Comment 
+*/
 .window(15m)
 .request($where[0];$what[0];$when[0];$window[0]).as($i_cpu)
 .request($where[0];$what[1];$when[0];$window[0]).as($i_netin_b)

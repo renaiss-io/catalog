@@ -1,0 +1,10 @@
+where(@prometheus)
+.what("node_load5")
+.when(30m)
+.window(1m)
+
+.request($where[0];$what[0];$when[0];$window[0]).as($ts_node_cpu_seconds_total)
+.chart($ts_node_cpu_seconds_total; @line123)
+
+
+
