@@ -1,0 +1,287 @@
+Benchmark parallel execution
+Number of workers: 26 Execution time: 13.696905374526978 seconds
+Number of workers: 26 Execution time: 2.614487648010254 seconds
+Number of workers: 26 Execution time: 12.184375286102295 seconds
+Number of workers: 26 Execution time: 4.091588020324707 seconds
+Number of workers: 26 Execution time: 7.713446140289307 seconds
+Number of workers: 26 Execution time: 3.844964027404785 seconds
+Number of workers: 26 Execution time: 3.7850711345672607 seconds
+Number of workers: 26 Execution time: 8.782595157623291 seconds
+Number of workers: 26 Execution time: 5.478206396102905 seconds
+Number of workers: 26 Execution time: 8.260237455368042 seconds
+Average time per execution of 26  workers is : 7.045380623600067 seconds
+Number of workers: 25 Execution time: 17.69092082977295 seconds
+Number of workers: 25 Execution time: 3.0988242626190186 seconds
+Number of workers: 25 Execution time: 8.94886064529419 seconds
+Number of workers: 25 Execution time: 8.482107400894165 seconds
+Number of workers: 25 Execution time: 7.778743743896484 seconds
+Number of workers: 25 Execution time: 3.779104709625244 seconds
+Number of workers: 25 Execution time: 3.5507233142852783 seconds
+Number of workers: 25 Execution time: 12.620380878448486 seconds
+Number of workers: 25 Execution time: 6.351485729217529 seconds
+Number of workers: 25 Execution time: 6.357157945632935 seconds
+Average time per execution of 25  workers is : 7.866087940299986 seconds
+Number of workers: 24 Execution time: 8.788304090499878 seconds
+Number of workers: 24 Execution time: 3.432953357696533 seconds
+Number of workers: 24 Execution time: 2.998903512954712 seconds
+Number of workers: 24 Execution time: 2.994403600692749 seconds
+Number of workers: 24 Execution time: 4.932020902633667 seconds
+Number of workers: 24 Execution time: 13.449191808700562 seconds
+Number of workers: 24 Execution time: 11.031527519226074 seconds
+Number of workers: 24 Execution time: 12.297297477722168 seconds
+Number of workers: 24 Execution time: 7.956378936767578 seconds
+Number of workers: 24 Execution time: 8.762654542922974 seconds
+Average time per execution of 24  workers is : 7.664652936200037 seconds
+Number of workers: 23 Execution time: 2.3242478370666504 seconds
+Number of workers: 23 Execution time: 2.5282437801361084 seconds
+Number of workers: 23 Execution time: 7.353841304779053 seconds
+Number of workers: 23 Execution time: 5.433600425720215 seconds
+Number of workers: 23 Execution time: 9.326102495193481 seconds
+Number of workers: 23 Execution time: 15.322606801986694 seconds
+Number of workers: 23 Execution time: 3.14363169670105 seconds
+Number of workers: 23 Execution time: 6.604902029037476 seconds
+Number of workers: 23 Execution time: 2.516536235809326 seconds
+Number of workers: 23 Execution time: 2.7938477993011475 seconds
+Average time per execution of 23  workers is : 5.735031383899877 seconds
+Number of workers: 22 Execution time: 2.9275918006896973 seconds
+Number of workers: 22 Execution time: 2.6715805530548096 seconds
+Number of workers: 22 Execution time: 6.463557004928589 seconds
+Number of workers: 22 Execution time: 2.523766279220581 seconds
+Number of workers: 22 Execution time: 7.611888408660889 seconds
+Number of workers: 22 Execution time: 2.699404239654541 seconds
+Number of workers: 22 Execution time: 2.6077640056610107 seconds
+Number of workers: 22 Execution time: 7.432699918746948 seconds
+Number of workers: 22 Execution time: 2.8744215965270996 seconds
+Number of workers: 22 Execution time: 7.229714632034302 seconds
+Average time per execution of 22  workers is : 4.504524654099987 seconds
+Number of workers: 21 Execution time: 2.7637176513671875 seconds
+Number of workers: 21 Execution time: 2.62325119972229 seconds
+Number of workers: 21 Execution time: 2.6553382873535156 seconds
+Number of workers: 21 Execution time: 2.6477956771850586 seconds
+Number of workers: 21 Execution time: 3.225355863571167 seconds
+Number of workers: 21 Execution time: 7.703852891921997 seconds
+Number of workers: 21 Execution time: 7.8195812702178955 seconds
+Number of workers: 21 Execution time: 2.7783846855163574 seconds
+Number of workers: 21 Execution time: 12.926239252090454 seconds
+Number of workers: 21 Execution time: 6.337959051132202 seconds
+Average time per execution of 21  workers is : 5.148408367800039 seconds
+Number of workers: 20 Execution time: 7.5807013511657715 seconds
+Number of workers: 20 Execution time: 3.656841516494751 seconds
+Number of workers: 20 Execution time: 3.3943607807159424 seconds
+Number of workers: 20 Execution time: 2.745814323425293 seconds
+Number of workers: 20 Execution time: 3.2160816192626953 seconds
+Number of workers: 20 Execution time: 8.015413284301758 seconds
+Number of workers: 20 Execution time: 8.188100814819336 seconds
+Number of workers: 20 Execution time: 12.22911787033081 seconds
+Number of workers: 20 Execution time: 2.8754305839538574 seconds
+Number of workers: 20 Execution time: 8.33322262763977 seconds
+Average time per execution of 20  workers is : 6.023813051300022 seconds
+Number of workers: 19 Execution time: 6.944315433502197 seconds
+Number of workers: 19 Execution time: 7.903021574020386 seconds
+Number of workers: 19 Execution time: 2.740318536758423 seconds
+Number of workers: 19 Execution time: 2.6391749382019043 seconds
+Number of workers: 19 Execution time: 2.6586015224456787 seconds
+Number of workers: 19 Execution time: 7.34489631652832 seconds
+Number of workers: 19 Execution time: 7.235010147094727 seconds
+Number of workers: 19 Execution time: 8.151729345321655 seconds
+Number of workers: 19 Execution time: 2.939434766769409 seconds
+Number of workers: 19 Execution time: 7.368571519851685 seconds
+Average time per execution of 19  workers is : 5.592816299399965 seconds
+Number of workers: 18 Execution time: 3.1443755626678467 seconds
+Number of workers: 18 Execution time: 2.838440418243408 seconds
+Number of workers: 18 Execution time: 2.499847650527954 seconds
+Number of workers: 18 Execution time: 6.627744436264038 seconds
+Number of workers: 18 Execution time: 2.6462552547454834 seconds
+Number of workers: 18 Execution time: 2.739116907119751 seconds
+Number of workers: 18 Execution time: 2.5060439109802246 seconds
+Number of workers: 18 Execution time: 7.4030303955078125 seconds
+Number of workers: 18 Execution time: 11.161324501037598 seconds
+Number of workers: 18 Execution time: 2.740600824356079 seconds
+Average time per execution of 18  workers is : 4.430925585600017 seconds
+Number of workers: 17 Execution time: 2.748624086380005 seconds
+Number of workers: 17 Execution time: 2.642235517501831 seconds
+Number of workers: 17 Execution time: 2.614661455154419 seconds
+Number of workers: 17 Execution time: 2.5937135219573975 seconds
+Number of workers: 17 Execution time: 7.941384315490723 seconds
+Number of workers: 17 Execution time: 7.480800628662109 seconds
+Number of workers: 17 Execution time: 2.4707469940185547 seconds
+Number of workers: 17 Execution time: 5.5718536376953125 seconds
+Number of workers: 17 Execution time: 2.859581708908081 seconds
+Number of workers: 17 Execution time: 4.244006156921387 seconds
+Average time per execution of 17  workers is : 4.117032196199943 seconds
+Number of workers: 16 Execution time: 2.491209030151367 seconds
+Number of workers: 16 Execution time: 2.539773941040039 seconds
+Number of workers: 16 Execution time: 6.794981479644775 seconds
+Number of workers: 16 Execution time: 2.8379979133605957 seconds
+Number of workers: 16 Execution time: 2.789480209350586 seconds
+Number of workers: 16 Execution time: 2.6721553802490234 seconds
+Number of workers: 16 Execution time: 6.444437026977539 seconds
+Number of workers: 16 Execution time: 6.714881181716919 seconds
+Number of workers: 16 Execution time: 7.148253917694092 seconds
+Number of workers: 16 Execution time: 3.0727293491363525 seconds
+Average time per execution of 16  workers is : 4.350844678199974 seconds
+Number of workers: 15 Execution time: 3.34867525100708 seconds
+Number of workers: 15 Execution time: 3.4611082077026367 seconds
+Number of workers: 15 Execution time: 2.563199996948242 seconds
+Number of workers: 15 Execution time: 3.435410261154175 seconds
+Number of workers: 15 Execution time: 3.002045154571533 seconds
+Number of workers: 15 Execution time: 3.054447650909424 seconds
+Number of workers: 15 Execution time: 3.0351505279541016 seconds
+Number of workers: 15 Execution time: 7.248058319091797 seconds
+Number of workers: 15 Execution time: 2.603543758392334 seconds
+Number of workers: 15 Execution time: 3.0283923149108887 seconds
+Average time per execution of 15  workers is : 3.4782967064998958 seconds
+Number of workers: 14 Execution time: 3.0777294635772705 seconds
+Number of workers: 14 Execution time: 2.838348627090454 seconds
+Number of workers: 14 Execution time: 2.6053249835968018 seconds
+Number of workers: 14 Execution time: 3.127809762954712 seconds
+Number of workers: 14 Execution time: 7.174721002578735 seconds
+Number of workers: 14 Execution time: 3.1687002182006836 seconds
+Number of workers: 14 Execution time: 3.0941219329833984 seconds
+Number of workers: 14 Execution time: 2.4647836685180664 seconds
+Number of workers: 14 Execution time: 2.637133836746216 seconds
+Number of workers: 14 Execution time: 2.6950175762176514 seconds
+Average time per execution of 14  workers is : 3.2885575035999866 seconds
+Number of workers: 13 Execution time: 3.109668016433716 seconds
+Number of workers: 13 Execution time: 2.6748416423797607 seconds
+Number of workers: 13 Execution time: 2.497030258178711 seconds
+Number of workers: 13 Execution time: 2.4984703063964844 seconds
+Number of workers: 13 Execution time: 7.51467490196228 seconds
+Number of workers: 13 Execution time: 3.422304630279541 seconds
+Number of workers: 13 Execution time: 2.753208637237549 seconds
+Number of workers: 13 Execution time: 7.264810085296631 seconds
+Number of workers: 13 Execution time: 2.7634541988372803 seconds
+Number of workers: 13 Execution time: 2.579394817352295 seconds
+Average time per execution of 13  workers is : 3.7081022148000558 seconds
+Number of workers: 12 Execution time: 3.106597423553467 seconds
+Number of workers: 12 Execution time: 7.581983327865601 seconds
+Number of workers: 12 Execution time: 2.8422129154205322 seconds
+Number of workers: 12 Execution time: 3.0066118240356445 seconds
+Number of workers: 12 Execution time: 3.0706868171691895 seconds
+Number of workers: 12 Execution time: 7.385950088500977 seconds
+Number of workers: 12 Execution time: 3.0516669750213623 seconds
+Number of workers: 12 Execution time: 2.874638080596924 seconds
+Number of workers: 12 Execution time: 2.842054843902588 seconds
+Number of workers: 12 Execution time: 3.347864866256714 seconds
+Average time per execution of 12  workers is : 3.9113100960999874 seconds
+Number of workers: 11 Execution time: 7.17792010307312 seconds
+Number of workers: 11 Execution time: 4.065387010574341 seconds
+Number of workers: 11 Execution time: 5.40447998046875 seconds
+Number of workers: 11 Execution time: 5.197756290435791 seconds
+Number of workers: 11 Execution time: 3.4335825443267822 seconds
+Number of workers: 11 Execution time: 3.341867208480835 seconds
+Number of workers: 11 Execution time: 6.384949207305908 seconds
+Number of workers: 11 Execution time: 3.6393237113952637 seconds
+Number of workers: 11 Execution time: 8.28925085067749 seconds
+Number of workers: 11 Execution time: 3.0387401580810547 seconds
+Average time per execution of 11  workers is : 4.997616287500023 seconds
+Number of workers: 10 Execution time: 3.304612636566162 seconds
+Number of workers: 10 Execution time: 3.1290981769561768 seconds
+Number of workers: 10 Execution time: 8.585092544555664 seconds
+Number of workers: 10 Execution time: 3.0604612827301025 seconds
+Number of workers: 10 Execution time: 7.295291423797607 seconds
+Number of workers: 10 Execution time: 3.2097349166870117 seconds
+Number of workers: 10 Execution time: 6.005258083343506 seconds
+Number of workers: 10 Execution time: 3.361706018447876 seconds
+Number of workers: 10 Execution time: 8.055640697479248 seconds
+Number of workers: 10 Execution time: 7.620553731918335 seconds
+Average time per execution of 10  workers is : 5.363072052499956 seconds
+Number of workers: 9 Execution time: 8.285426378250122 seconds
+Number of workers: 9 Execution time: 3.5730645656585693 seconds
+Number of workers: 9 Execution time: 7.149072170257568 seconds
+Number of workers: 9 Execution time: 3.2957582473754883 seconds
+Number of workers: 9 Execution time: 3.5686604976654053 seconds
+Number of workers: 9 Execution time: 3.045729637145996 seconds
+Number of workers: 9 Execution time: 3.19568133354187 seconds
+Number of workers: 9 Execution time: 3.4899444580078125 seconds
+Number of workers: 9 Execution time: 6.1467444896698 seconds
+Number of workers: 9 Execution time: 4.147279262542725 seconds
+Average time per execution of 9  workers is : 4.590084103899971 seconds
+Number of workers: 8 Execution time: 3.454802989959717 seconds
+Number of workers: 8 Execution time: 8.792321681976318 seconds
+Number of workers: 8 Execution time: 3.446240186691284 seconds
+Number of workers: 8 Execution time: 3.7884085178375244 seconds
+Number of workers: 8 Execution time: 3.901710033416748 seconds
+Number of workers: 8 Execution time: 4.005186319351196 seconds
+Number of workers: 8 Execution time: 3.796633005142212 seconds
+Number of workers: 8 Execution time: 3.558504343032837 seconds
+Number of workers: 8 Execution time: 4.056628704071045 seconds
+Number of workers: 8 Execution time: 3.3492772579193115 seconds
+Average time per execution of 8  workers is : 4.215255121100017 seconds
+Number of workers: 7 Execution time: 8.476387977600098 seconds
+Number of workers: 7 Execution time: 8.822110891342163 seconds
+Number of workers: 7 Execution time: 4.828963041305542 seconds
+Number of workers: 7 Execution time: 4.231152057647705 seconds
+Number of workers: 7 Execution time: 8.805852890014648 seconds
+Number of workers: 7 Execution time: 3.80876088142395 seconds
+Number of workers: 7 Execution time: 8.866296529769897 seconds
+Number of workers: 7 Execution time: 4.102504253387451 seconds
+Number of workers: 7 Execution time: 4.412846565246582 seconds
+Number of workers: 7 Execution time: 3.9893503189086914 seconds
+Average time per execution of 7  workers is : 6.034715557399977 seconds
+Number of workers: 6 Execution time: 4.069494247436523 seconds
+Number of workers: 6 Execution time: 4.640329122543335 seconds
+Number of workers: 6 Execution time: 4.63557505607605 seconds
+Number of workers: 6 Execution time: 11.199757814407349 seconds
+Number of workers: 6 Execution time: 4.544803857803345 seconds
+Number of workers: 6 Execution time: 4.3909080028533936 seconds
+Number of workers: 6 Execution time: 13.716878175735474 seconds
+Number of workers: 6 Execution time: 4.718556880950928 seconds
+Number of workers: 6 Execution time: 5.20148777961731 seconds
+Number of workers: 6 Execution time: 5.073876619338989 seconds
+Average time per execution of 6  workers is : 6.2194838711000555 seconds
+Number of workers: 5 Execution time: 10.269789218902588 seconds
+Number of workers: 5 Execution time: 5.312933921813965 seconds
+Number of workers: 5 Execution time: 5.087671995162964 seconds
+Number of workers: 5 Execution time: 5.077521800994873 seconds
+Number of workers: 5 Execution time: 19.717604398727417 seconds
+Number of workers: 5 Execution time: 9.710676908493042 seconds
+Number of workers: 5 Execution time: 5.858466148376465 seconds
+Number of workers: 5 Execution time: 15.763121604919434 seconds
+Number of workers: 5 Execution time: 5.019380807876587 seconds
+Number of workers: 5 Execution time: 5.51119589805603 seconds
+Average time per execution of 5  workers is : 8.733100911300061 seconds
+Number of workers: 4 Execution time: 16.547119617462158 seconds
+Number of workers: 4 Execution time: 16.468828916549683 seconds
+Number of workers: 4 Execution time: 6.26661229133606 seconds
+Number of workers: 4 Execution time: 10.99017333984375 seconds
+Number of workers: 4 Execution time: 15.872370481491089 seconds
+Number of workers: 4 Execution time: 6.348659038543701 seconds
+Number of workers: 4 Execution time: 5.758763790130615 seconds
+Number of workers: 4 Execution time: 8.118156671524048 seconds
+Number of workers: 4 Execution time: 5.875791311264038 seconds
+Number of workers: 4 Execution time: 7.535627603530884 seconds
+Average time per execution of 4  workers is : 9.978441044000101 seconds
+Number of workers: 3 Execution time: 13.21000623703003 seconds
+Number of workers: 3 Execution time: 8.699902534484863 seconds
+Number of workers: 3 Execution time: 12.860657215118408 seconds
+Number of workers: 3 Execution time: 18.8740234375 seconds
+Number of workers: 3 Execution time: 8.246950149536133 seconds
+Number of workers: 3 Execution time: 8.210002899169922 seconds
+Number of workers: 3 Execution time: 8.180921792984009 seconds
+Number of workers: 3 Execution time: 7.278608322143555 seconds
+Number of workers: 3 Execution time: 17.766788482666016 seconds
+Number of workers: 3 Execution time: 15.203300952911377 seconds
+Average time per execution of 3  workers is : 11.853371578299994 seconds
+Number of workers: 2 Execution time: 10.808674097061157 seconds
+Number of workers: 2 Execution time: 20.365370273590088 seconds
+Number of workers: 2 Execution time: 16.259373426437378 seconds
+Number of workers: 2 Execution time: 11.678617715835571 seconds
+Number of workers: 2 Execution time: 10.510000228881836 seconds
+Number of workers: 2 Execution time: 15.812397480010986 seconds
+Number of workers: 2 Execution time: 11.861992835998535 seconds
+Number of workers: 2 Execution time: 15.159202575683594 seconds
+Number of workers: 2 Execution time: 20.05426597595215 seconds
+Number of workers: 2 Execution time: 15.654754161834717 seconds
+Average time per execution of 2  workers is : 14.816704157599997 seconds
+Number of workers: 1 Execution time: 24.443836212158203 seconds
+Number of workers: 1 Execution time: 21.268280267715454 seconds
+Number of workers: 1 Execution time: 26.790345668792725 seconds
+Number of workers: 1 Execution time: 29.354787349700928 seconds
+Number of workers: 1 Execution time: 27.261279106140137 seconds
+Number of workers: 1 Execution time: 22.44845414161682 seconds
+Number of workers: 1 Execution time: 26.884135484695435 seconds
+Number of workers: 1 Execution time: 21.13130283355713 seconds
+Number of workers: 1 Execution time: 30.610671043395996 seconds
+Number of workers: 1 Execution time: 32.16126847267151 seconds
+Average time per execution of 1  workers is : 26.235624141799963 seconds

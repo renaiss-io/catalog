@@ -76,7 +76,7 @@ metric_names = [
 # Control the number of max_workers
 max_workers = len(metric_names)  # Set the desired number of workers
 
-for i in range(len(metric_names),0,-1):
+def launch_threads_request(i=None):
     start_time = time.time()
     # Create a ThreadPoolExecutor to run queries in parallel
     with concurrent.futures.ThreadPoolExecutor(max_workers=i) as executor:
@@ -92,9 +92,19 @@ for i in range(len(metric_names),0,-1):
                 #print(f"Metric '{metric_name}' query result: {result}")
             except Exception as e:
                 print(f"Metric '{metric_name}' query failed with error: {e}")
-        executor._max_workers
+        
+        if(executor._max_workers != i):
+            print("you should specify a number of workers")
 
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"Number of workers: {i} Execution time: {elapsed_time} seconds")
     
+print("Benchmark parallel execution")
+
+for i in range(len(metric_names),0,-1):
+    execution_times= 10
+    execution_time = timeit.timeit(lambda: launch_threads_request(i), number=execution_times)
+    print(f"Average time per execution of {i}  workers is : {execution_time / execution_times} seconds")
+
+
